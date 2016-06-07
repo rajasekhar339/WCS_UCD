@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Test" default="init" basedir=".">
+	
+	 <taskdef resource="net/sf/antcontrib/antlib.xml">
+	 <classpath>
+    <pathelement location="C:\apache\apache-ant-1.9.7\lib\antcontrib.jar"/>
+     </classpath>
+	 </taskdef>
+  <description>
+    simple example build file
+  </description>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+	
+    <exec dir="C:\IBM\WCDE_ENT70\wcbd\dist\toolkit\wcbd-deploy-toolkit-WCS_UCD_Build" executable="cmd.exe">
+    <arg value="/c ant-deploy.cmd " />   
+	
+	
+</exec>
+  </target>
+
+</project>
