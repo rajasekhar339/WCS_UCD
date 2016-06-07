@@ -1,1 +1,1 @@
-WCS Component
+WCS - UCD Demo
